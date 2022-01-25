@@ -24,7 +24,8 @@ devtools::github_install("MorganLevineLab/prcPhenoAge")
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+Here is a template code using example data (Lehne et al. 2015) available
+as part of this package:
 
 ``` r
 library(prcPhenoAge)
