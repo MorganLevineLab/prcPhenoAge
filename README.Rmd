@@ -1,0 +1,43 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# prcPhenoAge
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of prcPhenoAge is to perform a calculation of PhenoAge (2018) while subscoring the epigenetic age into the portion of PhenoAge reliant upon beta values annotated to be in PRC associated CpGs, and non-PRC associated CpGs. The PRC annotation is from the 27K CpGs, but the information is applicable to arrays of 450K and Illumina EPIC data.
+
+## Installation
+
+You can install the released version of prcPhenoAge from [GitHub](https://github.com/MorganLevineLab/prcPhenoAge) with:
+
+``` r
+devtools::github_install("MorganLevineLab/prcPhenoAge")
+```
+
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+```{r example}
+library(prcPhenoAge)
+data("exampleBetas")
+data("examplePheno")
+PRC_PhenoAge <- calcnonPRCPhenoAge(exampleBetas, examplePheno, imputation = F)
+PRC_PhenoAge <- calcPRCPhenoAge(exampleBetas, PRC_PhenoAge, imputation = F)
+PRC_PhenoAge
+```
+
