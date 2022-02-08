@@ -10,8 +10,8 @@
 The goal of prcPhenoAge is to perform a calculation of PhenoAge (2018)
 while subscoring the epigenetic age into the portion of PhenoAge reliant
 upon beta values annotated to be in PRC associated CpGs, and non-PRC
-associated CpGs. The PRC annotation is from the 27K CpGs, but the
-information is applicable to arrays of 450K and Illumina EPIC data.
+associated CpGs. The determination of PRC-associated CpGs was desrived from
+Lee et al. (2006) PMID: 16630818.
 
 ## Installation
 
