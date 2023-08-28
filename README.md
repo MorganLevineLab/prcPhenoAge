@@ -19,7 +19,7 @@ You can install the released version of prcPhenoAge from
 [GitHub](https://github.com/MorganLevineLab/prcPhenoAge) with:
 
 ``` r
-devtools::github_install("MorganLevineLab/prcPhenoAge")
+devtools::install_github("MorganLevineLab/prcPhenoAge")
 ```
 
 ## Example
